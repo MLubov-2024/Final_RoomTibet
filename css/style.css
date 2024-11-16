@@ -1,0 +1,286 @@
+@import url(/css/reset.css);
+
+@font-face {
+    font-family: 'Atyp Display';
+    src: url('../fonts/AtypDisplay-Semibold.woff2') format('woff2'),
+        url('../fonts/AtypDisplay-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Display';
+    src: url('../fonts/AtypDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/AtypDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atyp Display';
+    src: url('AtypDisplay-Bold.woff2') format('woff2'),
+        url('AtypDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    color: #060606;    
+    line-height: normal;
+    background-color: #F5F5F5;
+    margin: 0;
+    font-family: 'Proxima Nova Rg';
+    font-weight: 400;
+}
+.header {
+    background-color: #fff;
+}
+  
+.header__container {
+    margin: auto;   
+    max-width: 1280px; 
+    /*height: 150px;*/   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    font-family: 'Atyp Display';
+    font-weight: 400;
+}
+  
+.header__menu container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.menu__list {    
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+    text-align: center; 
+    padding: 0;
+    gap: 30px; 
+    font-size: 18px;   
+}
+.menu__item {   
+    display: flex;    
+    align-items: center;
+    text-decoration: none;
+}
+.menu__link {    
+    color: #000;
+    font-size: 18px;
+}
+
+
+summary {
+    cursor: pointer;    
+  }
+summary:after {  /*устанавливаем содержимое, которое будет располагаться перед основным содержимым элемента summary*/
+    content: "\2714";
+    font-size: 20px;
+    font-weight: bold;
+    margin: -5px 5px 5px 5px;    
+ }
+ details[open] summary:after {  /*можем обратиться к элементу details summary в раскрытом состоянии*/
+    content: "-";     
+ } 
+details > summary {  /*маркер скрытости/раскрытости (изменить стили), по умолчанию треугольник*/  
+    cursor: pointer;
+    list-style-type: none;   
+    color: #000;
+    background-color: #fff;
+}
+details[open] > summary {
+    color: #000;
+    background-color: #fff;
+}
+.submenu__list {
+    position: absolute;
+    z-index: 11; 
+}
+  
+
+.header__feedback {
+    display: flex;
+    align-items: center;      
+    justify-content: space-between;
+    gap: 28px;
+    height: 50px;
+}
+
+details > summary {
+    padding: 5px;
+    /*background-color: #eee;*/
+    color: #333;
+    /*border: 1px #ccc solid;*/
+    cursor: pointer;
+}
+
+details > div {
+    border: 1px #ccc solid;
+    padding: 10px;
+}
+details[open] > summary {
+    color:#eee; 
+    background-color:#333;
+}
+
+.header__text {
+    display: inline-block;
+   /* align-items: center;  
+    justify-content: center;    
+    flex-direction: column;
+    width: 197px;
+    height: 50px;  
+    gap: 3px;    */
+}
+.feedback__city {
+    margin-bottom: 3px;
+    border-bottom: 1px dashed #003476;
+    color: #003476;    
+    font-size: 16px;    
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;    
+}
+.feedback__tel {
+    font-family: 'Atyp Display';
+    font-weight: 700;
+    font-size: 20px;  /*font-size: 18px; */
+    color: #455366;
+
+}
+.header__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EF5247;
+    width: 197px;
+    height: 50px;    
+    border-radius: 10px;     
+}
+
+.header__btn>a {   
+    color: #fff; 
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26.53px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;   
+}
+.main {
+    margin: auto;
+    max-width: 1280px; 
+    /*height: 568px;*/
+    background-color: #fff;
+    margin-top: 50px;    
+}
+.main__container {
+    background: url("../img/slider_picture.jpg") 0 0/cover no-repeat;
+    background-size: contain;
+    background-position: right;
+    
+}
+
+.main__slider {
+    overflow: visible;
+}
+  
+.main__slide {    
+    padding: 100px 70px 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+   
+} 
+
+.main__title {    
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 2rem;
+    max-width: 40rem;
+    font-family: 'Atyp Display';
+    font-weight: 400;
+    font-size: 40px;
+    color: #003476;
+    
+}  
+.main__price {
+    margin-bottom: 30px;
+    font-family: 'Atyp Display';
+    font-weight: 400;
+    font-size: 20px;
+    color: #003476;
+}
+.main__subtitle {
+    margin-bottom: 20px;
+    color: #455366;    
+    font-size: 18px;
+}  
+.main__btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:  #003476;
+    width: 240px;
+    height: 50px;    
+    border-radius: 10px; 
+}  
+.main__btns>a {
+    color: #fff;    
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26.53px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none; 
+} 
+.main__btn {
+    padding-inline: 2rem;
+}  
+.main__prev {
+    display: none;
+}  
+.main__next {
+    display: none;
+}
+.information {
+    margin: auto;
+    width: 1280px;
+    margin-top: 100px;    
+}
+.information__container {
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+}
+.law__title, .support__title,
+.budget__title, .design__title {
+    font-family: 'Atyp Display';
+    font-weight: 600;
+    color: #212121;
+    margin-top: 20px;
+}
+.law__text, .support__text,
+.budget__text, .design__text {
+    font-family: 'Proxima Nova Rg';
+    font-weight: 400;
+    color: #212121;
+    font-size: 18px;
+    margin-top: 20px;
+}

@@ -1,0 +1,36 @@
+* {
+    margin: 0; /*у каждого элемента будут удалены значения по умолчанию*/
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /*вычисление границы с отступами, т.е. внутри элемента (ширина, которую мы ставим, относится к элементу полностью, включая border и padding)*/
+}
+
+ol, summary,
+ul {
+  list-style: none;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
