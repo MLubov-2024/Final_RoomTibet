@@ -326,5 +326,69 @@ details[open] > summary {
     border-radius: 20px;
     background-color: #FFFFFF;
     box-shadow: 4px 4px 121px 0px #0000001A;
+}
+.promotion__inner, .creation__inner,
+.support__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inner__title {
+    display: flex;
+    justify-content: center;
+    width: 343px;
+    height: 98px;
+    background-color: #00347626;
+    border-radius: 15px;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+}
+.inner__title>p {    
+    font-size: 28px;
+    font-family: 'Atyp Display';
+    font-weight: bold;
+    color: #212121;   
+}
+.inner__content {
+    padding-top: 25px;
+}
+.inner__content-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 18px;
+    font-size: 18px;
+    color: #455366;
+}
+.content__price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #212121;
+    padding-top: 61px;
+    
 
 }
+.inner__button {
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #F0A710;
+width: 340px;
+height: 50px;    
+border-radius: 10px; 
+margin-top: 15px;
+
+}  
+.inner__button>a {
+color: #000;    
+font-size: 18px;
+font-weight: 400;
+line-height: 26.53px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none; 
+} 
+
+    
